@@ -1,0 +1,337 @@
+
+/* CSS Reset*/
+body, header, nav, main footer, h1, div, img, ul, figure, figcaption, section, article, aside, audio, video{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*~~~~~~~~~~GENERAL STYLE RULES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+body {
+		background-color: #7d7d7d; 
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #252525;
+}
+
+a {
+	text-decoration: none;
+}
+
+footer a {
+	color: #7d7d7d;
+}
+
+.tv-man {
+	width: 300px;
+}
+
+.congrats {
+	width: 90%;
+}
+
+.imgstyle {
+	width: 50%;
+	margin: 0 auto;
+	box-shadow: 0px 5px 10px #252525;
+	border-radius: 10px;
+}
+
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.logo {
+	float: left;
+	height: 150px;
+}
+
+button {
+	font-family: 'Fredoka One', 'Arial Rounded MT';
+	font-size: 1.5em;
+	text-decoration: none;
+	padding: 0.5em 1em;
+	box-shadow: 0px 5px 10px #252525;
+	display: block;
+	color: #fff;
+	background-color: #0091ff;
+	border-radius: 10px;
+	margin: auto;
+}
+
+button:hover {
+	color: #0091ff;
+	background-color: #fff;
+	text-decoration: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+/* Stle rules for form elements */
+fieldset {
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+	text-align: left;
+	color: #252525;
+}
+
+label {
+	display: block;
+	padding-top: 3%;
+}
+
+form #submit {
+	font-family: 'Fredoka One', 'Arial Rounded MT';
+	font-size: 1.5em;
+	text-decoration: none;
+	padding: 0.5em 1em;
+	box-shadow: 0px 5px 10px #252525;
+	display: block;
+	color: #fff;
+	background-color: #0091ff;
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+form #submit:hover {
+	color: #0091ff;
+	background-color: #fff;
+	text-decoration: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+#form {
+	margin: 0 auto;
+	padding: 5%;
+	border-color: #fff;
+}
+
+input {
+	margin: 1%;
+}
+
+.padding {
+	padding: 5%;
+}
+
+.padding2 {
+	padding: 2%;
+}
+
+.display {
+	-webkit-text-fill-color: #fff;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #000;
+}
+
+.shadow {
+	text-shadow: 0px 3px 5px #000;
+}
+
+.white {
+	color: #fff;
+}
+
+.huge {
+	font-size: 3em;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 80%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #fff;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 40%; 
+  border: 2px solid #000;
+  background: #252525;
+  cursor: pointer;
+}
+
+.phone {
+	letter-spacing: 5px;
+}
+/*~~~~~~~~~~GENERAL STYLE RULES END HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+/* Style rules for box sizing applies to all elements */
+*{
+	box-sizing: border-box;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules for header */ 
+header {
+		background-color: #7d7d7d;
+		height: 150px;
+		width: 100%;
+		box-shadow: 0px 5px 10px #252525;
+}
+header h1 {
+	text-align: center;
+	font-family: 'Segoe UI';
+	color: #fff;
+	font-size: 2.5em;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #000;
+  text-shadow: 0px 5px 10px #000;
+}
+
+header p {
+	font-family: 'Segoe UI';
+	text-align: center;
+	color: #fff;
+	text-shadow: 0px 5px 10px #000;
+}
+
+
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+	display: block;
+}
+
+.tablet-desktop {
+	display: none;
+}
+
+/* Style rules for main content */
+main {
+	background-color: #c3c3c3;
+	padding: 2%;
+	font-size: 1.15em;
+	font-family: 'Segoe UI', 'Arial';
+}
+
+/* Style rules for footer content */
+
+footer p {
+	font-size: 0.75em;
+	text-align: center;
+	color: #fff;
+	padding: 0 1em;
+}
+
+.intro {
+	padding: 0 10%;
+	display: block;
+}
+
+/*Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	
+	/*Tablet Viewport: Show tablet-desktop class, hide mobile class. */
+	.tablet-desktop {
+		display: block;
+	}
+	
+	.mobile {
+		display: none;
+	}
+	
+	/* Tablet Viewport: Style rule for header */
+	header {
+
+	}
+	
+	/* Tablet Viewport: Style rules for main content area */
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+	
+	.intro {
+	padding: 0 10%;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+	
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+	
+	/* Desktop Viewport: Style rule for header */
+	header {
+		width: 100%;
+		float: left;
+	}
+	
+	/* Desktop Viewport: Style rules for main content */
+	main {
+		clear: left;
+	}
+	
+	main h1 {
+		font-size: 1.8em;
+	}
+	
+	article h3 {
+		font-size: 1.75em;
+	}
+	
+	.pix-text {
+		font-size: 1.5em;
+		padding: 20px;
+	}
+	
+	.frame {
+		opacity: 0.9;
+		border-radius: 10px;
+	}
+	
+	.frame:hover {
+		opacity: 1;
+		box-shadow: 5px 5px 10px #252525;
+	}
+	
+	.frame img {
+	border-radius: 10px;
+	}
+	
+	.intro {
+	padding: 0 25%;
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+}
+
+/* Media Query for Print */
+@media print {
+	
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+	
+}
+	
